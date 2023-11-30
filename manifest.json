@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Font Resizer",
+    "version": "1.0",
+    "description": "Change text size",
+    "permissions": ["activeTab"],
+    "icons": {
+      "16": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    }
+  }
+  
